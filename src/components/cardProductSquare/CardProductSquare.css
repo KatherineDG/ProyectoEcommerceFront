@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('/public/fonts/Satoshi-Black.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('/public/fonts/Satoshi-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('/public/fonts/Satoshi-Light.otf');
+}
+
+.card-square{
+    text-align: center;
+    padding: 2% 2% 2% 2%;
+    margin: 20px 50px 20px 50px;
+}
+
+.image-product-square {
+    object-fit: cover;
+    height: 300px;
+}
+
+.data-product-discount-square{
+    display: flex;
+    justify-content: center;
+    font-family: 'Satoshi-Medium';
+
+} .price-last-product-square{
+    font-family: 'Satoshi-Light';
+    text-decoration: line-through;
+    color: rgb(121, 114, 114);
+}
+
+.data-product-home-square{
+    font-size: 1.2em;
+}
+
+.name-product-square{
+    font-family: 'Satoshi-Medium';
+}
+.price-product-square{
+    font-family: 'Satoshi-Black';
+}
+
+.discount-deco-square{
+    background-color: rgb(206, 152, 36);
+    position: absolute;
+    margin: 20px 0 0 15px;
+    padding: 0.5em;
+    font-family: 'Satoshi-Medium';
+}
+
+@media screen and (max-width: 768px) {
+    .card-square{
+        margin: 2px 2px 2px 2px;
+    }
+
+    .image-product-square {
+        object-fit: cover;
+        height: 150px;
+    }
+
+    .data-product-home-square{
+        font-size: 0.7em;
+        padding: 2%;
+    }
+    
+    .discount-deco-square{
+        margin: 5px 0 0 -10px;
+        padding: 1%;
+        font-size: 0.8em;
+        text-align: center;
+    }
+}

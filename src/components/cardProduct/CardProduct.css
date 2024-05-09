@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('/public/fonts/Satoshi-Black.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('/public/fonts/Satoshi-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('/public/fonts/Satoshi-Light.otf');
+}
+
+.card{
+    text-align: center;
+    margin: 5%;
+    padding: 2% 2% 2% 2%;
+}
+
+.image-product {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.data-product-discount{
+    display: flex;
+    justify-content: center;
+    font-family: 'Satoshi-Medium';
+} .price-last-product{
+    font-family: 'Satoshi-Light';
+    text-decoration: line-through;
+    color: rgb(121, 114, 114);
+}
+
+.data-product-home{
+    font-size: 1.2em;
+}
+
+.name-product{
+    font-family: 'Satoshi-Medium';
+}
+.price-product{
+    font-family: 'Satoshi-Black';
+}
+
+.discount-deco{
+    background-color: rgb(206, 152, 36);
+    position: absolute;
+    margin: 20px 0 0 5px;
+    padding: 0.5em;
+    font-family: 'Satoshi-Medium';
+}

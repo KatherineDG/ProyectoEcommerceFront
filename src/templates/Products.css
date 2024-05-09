@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('/public/fonts/Satoshi-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('/public/fonts/Satoshi-Medium.otf');
+}
+
+.title-products{
+    font-family: "Satoshi-Bold";
+    margin: 0 0 2% 20%;
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 10%;
+}
+
+@media screen and (max-width: 768px){
+    .title-products{
+        font-family: "Satoshi-Bold";
+        margin: 0 0 2% 2%;
+    }
+
+    .filter-products{
+        display: flex;
+        margin: 0 0 2% 0;
+        font-family: "Satoshi-Medium";
+    }
+
+    .icon-arrow-filter{
+        height: 15px;
+        width: 15px;
+    }
+
+    .btn-filter-products{
+        background-color: rgb(255, 255, 255);
+        margin: 1.1% 0 0 0;
+        border: none;
+        transition: 0.5s;
+    }
+
+    .btn-filter-products-move {
+        background-color: rgb(255, 255, 255);
+        margin: 1.1% 0 0 40%;
+        border: none;
+        transition: 0.5s;
+    }
+
+    .icon-arrow-filter-reverse{
+        height: 15px;
+        width: 15px;
+    }
+
+    .products{
+        justify-content: space-around;
+        margin: 0 0 5% 0;
+    }
+}
