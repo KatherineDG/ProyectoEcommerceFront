@@ -1,0 +1,40 @@
+.contact{
+    display: flex;
+}
+
+.form-deco{
+    border: 1px solid black;
+    border-radius: 100px 100px 0 0;
+    padding: 5px
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 100px 100px 0 0;
+}
+
+.title-contact{
+    text-align: center;
+    font-size: 1.3em;
+    margin: 10% 0 5% 0;
+}
+
+.input-form-contact{
+    border: 1px solid black;
+    border-radius: 0.3em;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.label-form-contact{
+    font-size: 0.7rem;
+    margin: 5% 0 0 0.2rem;
+}
+
+.btn-send-contact{
+    margin: 5% 30% 5% 30%;
+}
