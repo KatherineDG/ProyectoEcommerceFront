@@ -177,3 +177,93 @@
     color: black;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .contact{
+        flex-direction: column;
+    }
+
+    .form-deco{
+        width: 80%;
+        margin: 0 0 10% 0;
+    }
+
+    .form-contact{
+        width: 100%;
+    }
+
+    .title-contact-form{
+        font-size: 1.5em;
+    }
+
+    .input-form-contact{
+        font-size: 0.8em;
+    }
+
+    .input-form-contact-textarea{
+        font-size: 0.8em;
+    }
+
+    .label-form-contact{
+        font-size: 1.5em;
+    }
+
+    .btn-send-contact{
+        font-size: 1.3em;
+    }
+
+    .informacion-contact{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title-informacion-contact{
+        font-size: 1.5em;      
+    }
+
+    .horarios-de-atencion-contact{
+        display: flex;
+        flex-direction: column;
+        margin: 0 10% 0 10%;
+        font-size: 1em;
+    }
+
+    .redes-sociales-contact{
+        display: flex;
+        flex-direction: column;
+        margin: 10% 15% 10% 15%;
+        font-size: 1em;
+    }
+
+    .horario-contact{
+        font-size: 1.2em;
+        margin: 0 15% 0 15%;
+    }
+
+    .contenedor-redes-sociales-contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .icon-red-social-contact{
+        width: 50%;
+        height: 50%;
+        background-color: transparent;
+        cursor: pointer;
+        animation: none;
+        margin: 0 0 0 15%;
+    }
+    .icon-red-social-contact:hover{
+        animation: none;
+    }
+
+    .user-red-social-contact-uno{
+        position: relative;
+        cursor: pointer;
+        z-index: 1;
+    }
+}
+

@@ -16,11 +16,11 @@ function Contact() {
                         <div className="contenedor-redes-sociales-contact">
                             <div className="red-social-contact">
                                 <p className="user-red-social-contact-uno">@solsticioarg</p>
-                                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="user-red-social-contact"><img className="icon-red-social-contact" src="./images/icons/icon_facebook.png" alt="facebook"></img></a>
+                                <a href="https://web.facebook.com/" target="_blank" rel="noreferrer" className="user-red-social-contact"><img className="icon-red-social-contact" src="./images/icons/icon_facebook.png" alt="facebook"></img></a>
                             </div>
                             <div className="red-social-contact">
                                 <p className="user-red-social-contact-uno">@solsticio</p>
-                                <a href="https://web.facebook.com/" target="_blank" rel="noreferrer" className="user-red-social-contact"><img className="icon-red-social-contact" src="./images/icons/icon_instagram.png" alt="instagram"></img></a>
+                                <a href="https://instagram.com/" target="_blank" rel="noreferrer" className="user-red-social-contact"><img className="icon-red-social-contact" src="./images/icons/icon_instagram.png" alt="instagram"></img></a>
                             </div>
                         </div>
                     </div>
