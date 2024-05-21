@@ -17,7 +17,7 @@
 }
 
 .filters-right::-webkit-scrollbar-thumb {
-  background-color: #e4e4e4; /* Color del thumb (barra de desplazamiento) */
+  background-color: #b9b9b9; /* Color del thumb (barra de desplazamiento) */
   border-radius: 10px; /* Borde redondeado del thumb */
 }
 
