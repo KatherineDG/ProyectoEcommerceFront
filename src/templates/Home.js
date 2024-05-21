@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 import './stylesSwiper.css';
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
+import Navbar from "../components/navbar/Navbar";
 
 
 function Home() {
@@ -33,6 +34,7 @@ function Home() {
 
     return (
         <div className="body">
+            <Navbar />
             <div className="presentacion"><p>¡Hola! ¡Bienvenido/a a <b>Solsticio</b>!
                  </p><p>¿Buscas <b>zapatos</b>? ¡Estas en el lugar correcto!</p>
             </div>

@@ -1,11 +1,12 @@
 .filters-right{
     background-color: black;
     position: absolute;
-    height: 100vh;
+    height: 1000vh;
     width: 15%;
     color: white;
-    position: fixed;
     overflow-y: auto; /* Hace que el contenido se desplace si es más largo que el contenedor */
+    padding: 10% 0 0 0;
+    transform: translateY(-100px);
 }
 
 /* Personalizacion del scroll bar */

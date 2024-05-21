@@ -3,7 +3,7 @@ import "./Filters.css";
 
 function Filters({tipoFiltros}) {
     return(
-        <div>
+        <div className="contenedor-filtros">
             <div className="filters-right">
                 <p className="title-filters">Filtros</p>
                 {tipoFiltros.map((filtro, indice) => (

@@ -1,0 +1,110 @@
+.navbar{
+    position: inline-block;
+    margin-bottom: 5%;
+}
+
+.contenedor-navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.linea-promocion{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(211, 143, 63, 1);
+    padding: 1% 0 1% 0 ;
+}
+
+.linea-promocion p{
+    color: white;
+    margin: 0 20px 0 0;
+    animation: bucle 10s linear infinite;
+    white-space: nowrap; /* Previene el salto de línea */
+    font-size: 1.5em;
+    font-family: 'Satoshi-Black';
+}
+
+@keyframes bucle {
+    0% {
+        transform: translateX(0); /* Inicio en la posición original */
+      }
+      100% {
+        transform: translateX(-100%); /* Final fuera de la vista hacia la izquierda */
+      }
+}
+
+.logo-marca{
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    object-fit: cover; /* Recorta la imagen para que cubra el contenedor */
+    padding: 0 3.6% 3% 3.6%;
+    border-radius: 20px;
+    margin: 2% 0 0 0;
+}
+
+.nav-secciones{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 0 15%;
+}
+
+.nav-secciones a{
+    color: rgba(232, 189, 139, 1);
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 5% 0 5% 0;
+    font-family: 'Satoshi-Bold';
+    /* box-sizing: border-box; */ /* Hace que el borde se incluya en las dimensiones del elemento */
+    border-bottom: 3px solid transparent; /* Bordes transparentes en el estado inicial */
+}
+
+.nav-secciones a:hover{
+    border-bottom: 3px solid rgba(232, 189, 139, 1);
+}
+
+.busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3% 0 0;
+}
+
+.input-busqueda{
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 1.3em;
+    height: 2em;
+    padding: 0 0 0 0.8em;
+
+}
+
+.contenedor-lupa-icon{
+    position: relative; /* Necesario para que el icono absoluto se posicione dentro de este contenedor */
+    display: inline-block;
+    right: 0;
+}
+
+.lupa-icon{
+    position: absolute;
+    transform: translateY(-50%);
+    right: 5%;
+    width: 40px;
+}
+
+.carrito{
+    display: flex;
+    align-items: center;
+}
+
+.icon-carrito{
+    position: relative; /* Necesario para que el icono absoluto se posicione dentro de este contenedor */
+    display: inline-block;
+    width: 50px;
+    margin: 0 10px 30% 0;
+}

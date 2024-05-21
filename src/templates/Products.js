@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import './Products.css'
 import CardProductSquare from "../components/cardProductSquare/CardProductSquare";
 import Filters from "../components/filters/Filters";
+import Navbar from "../components/navbar/Navbar";
 
 function Products() {
     const [isMobile, setIsMobile] =  useState(false);
@@ -40,6 +41,7 @@ function Products() {
     const tipoFiltros = [{"Ordenar por": ["Mas vendidos", "Populares"]}, {"Color": ["Blanco", "Negro"]}, {"Talle": ["35", "36", "37", "38", "39", "40"]}];
     return (
         <div className="body">
+            <Navbar/>
             <h1 className="title-products">Todos los productos</h1>
             {isMobile ? 
                 <div>
