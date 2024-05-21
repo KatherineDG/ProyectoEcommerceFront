@@ -1,12 +1,10 @@
 .filters-right{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    height: 1000vh;
+    height: 100vh;
     width: 15%;
-    color: white;
+    color: rgb(0, 0, 0);
     overflow-y: auto; /* Hace que el contenido se desplace si es más largo que el contenedor */
-    padding: 10% 0 0 0;
-    transform: translateY(-100px);
 }
 
 /* Personalizacion del scroll bar */
@@ -15,11 +13,11 @@
 }
 
 .filters-right::-webkit-scrollbar-track {
-  background: #333; /* Color del fondo del scrollbar */
+  background: #e2e2e2; /* Color del fondo del scrollbar */
 }
 
 .filters-right::-webkit-scrollbar-thumb {
-  background-color: #666; /* Color del thumb (barra de desplazamiento) */
+  background-color: #e4e4e4; /* Color del thumb (barra de desplazamiento) */
   border-radius: 10px; /* Borde redondeado del thumb */
 }
 
@@ -68,8 +66,8 @@
     display: inline-block;
     width: 16px; /* Tamaño del checkbox */
     height: 16px; /* Tamaño del checkbox */
-    border: 2px solid #ffffff; /* Borde del checkbox */
-    background-color: #000000; /* Color de fondo del checkbox */
+    border: 2px solid #000000; /* Borde del checkbox */
+    background-color: #ffffff; /* Color de fondo del checkbox */
     margin: 0 5px 0 0;
   }
   
