@@ -11,6 +11,7 @@ import './stylesSwiper.css';
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 
 function Home() {
@@ -67,6 +68,7 @@ function Home() {
                 <CaracteristicsSales urlIcono={'/images/icons/icon_card.png'} titulo={'COMPRÁ CON SEGURIDAD'} subtitulo={'Tus datos siempre protegidos'} />  
             </div>
 
+            <Footer/>
         </div>
     );
 }

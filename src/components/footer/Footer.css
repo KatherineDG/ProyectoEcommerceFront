@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('/public/fonts/Satoshi-Regular.otf');
+}
+
+.footer{
+    background-color: black;
+}
+
+.logo-footer{
+    height: 5em;
+    padding: 20px 0;
+}  
+
+.columnas-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin: 0 10% 0 5%;
+    padding: 20px 0;
+}
+
+.lista-secciones{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Satoshi-Regular';
+}
+.lista-secciones a{
+    text-decoration: none;
+    color: white;
+    margin: 1em 0 0 0;
+}
+
+.lista-contacto{
+    list-style: none;
+    font-family: 'Satoshi-Regular';
+}
+.lista-contacto li{
+    display: flex;
+    align-items: center;
+}
+
+.titulo-horario-footer{
+    font-family: 'Satoshi-Medium';
+}
+.horarios-footer{
+    margin: 0 0 0 2em;
+    font-family: 'Satoshi-Regular';
+}
+
+.titulo-footer{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-family: 'Satoshi-Black';
+}
+.redes-footer{
+    padding: 20px 0 0 0;
+}
+
+.horizontal-news{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.horizontal-news img{
+    height: 1.6em;
+    padding: 0.3em;
+    background-color: white;
+}
+
+.input-news{
+    width: 100%;
+    padding: 0.5em;
+    border: white 1px solid;
+    background-color: black;
+    color: white;
+    font-family: 'Satoshi-Regular';
+}
+
+.duda-news{
+    color: black;
+    font-weight: bold;
+    background-color: #636363;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    border-radius: 50px;
+    margin: 0 0 1em 1em;
+}
+
+.icon-footer{
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 10px;
+}
+
+.redes-sociales-footer{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 2em 0;
+}
+.redes-sociales-footer img{
+    height: 2em;
+    width: 2em;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 50px;
+}
