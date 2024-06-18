@@ -3,6 +3,7 @@ import './Products.css'
 import CardProductSquare from "../components/cardProductSquare/CardProductSquare";
 import Filters from "../components/filters/Filters";
 import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 function Products() {
     const [isMobile, setIsMobile] =  useState(false);
@@ -70,6 +71,7 @@ function Products() {
                 <CardProductSquare urlImage={'/images/zapatosimplewuno.jpg'} nameProduct={'SIMPLE W'} priceNowProduct={'$40.000,00'} inDiscount={true} priceLastProduct={'$45.000,00'} porcentageDiscount={'11'}/>
                 <CardProductSquare urlImage={'/images/zapatoextrauno.jpg'} nameProduct={'EXTRA'} priceNowProduct={'$50.000,00'} inDiscount={false}/>
             </div>
+            <Footer/>
         </div>
     )
 }
