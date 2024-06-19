@@ -26,10 +26,6 @@
     width: 150%;
 }
 
-.selected {
-    border: 3px solid orange; 
-}
-
 .seleccion{
     margin: 15px 0 15px 0;
 }
@@ -39,7 +35,8 @@
     padding: 10px;
     margin: 5px;
     border-radius: 100px;
-    border: 1px black solid;
+    border: 1px solid black;
+    cursor: pointer;
 }
 
 .seleccion-talle{
@@ -58,8 +55,8 @@
     background-color: black;
     color: white;
     border: none;
-    padding: 5px 40px 5px 40px;
-    font-size: xx-large;
+    padding: 0.2em 1em 0.2em 1em;
+    font-size: x-large;
     cursor: pointer;
 }
 .selector-cantidad button:hover{
@@ -67,6 +64,23 @@
 }
 
 .selector-cantidad p{
-    font-size: x-large;
+    font-size: large;
     padding: 5px 40px 5px 40px;
+}
+
+.btn-anadir{
+    background-color: chocolate;
+    border: none;
+    font-size: large;
+    font-family: 'Satoshi-Black';
+    margin: 10% 0 0 0;
+    padding: 0.3em 1em 0.3em 1em;
+    cursor: pointer;
+
+
+}
+
+/* estilo dinamico / sobreescribe */
+.selected {
+    border: 3px solid orange; 
 }
