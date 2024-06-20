@@ -47,6 +47,7 @@ function Product(){
     return(
         <div className='body'>
             <Navbar/>
+            <button className='btn-volver'><img src='./images/icons/icon_flecha_reversa.png' alt='volver'></img></button>
             <div className='contenedor-producto'>
                 <div className='galeria-producto'>
                     <div className='imagenes-producto'>
@@ -62,16 +63,17 @@ function Product(){
                     }
                 </div>
                 <div className='informacion-producto'>
-                    <h4>GOTIC</h4>
-                    <p>10 u. disponibles</p>
-                    <p>$40.000</p>
-                    <p>Descripcion</p>
-                    <p>Zapatos goticos ficticios de cuero sintetico negro, con hebillas plateadas, punta puntiaguda y tacon grueso. Ideales para un estilo oscuro y distintivo.</p>
-                    <p>Eleccion</p>
-                    <p className='seleccion'>Color:</p>
+                    <h4 className='titulo-producto'>GOTIC</h4>
+                    <p className='descricpion-producto'>10 u. disponibles</p>
+                    <p className='precio'>$40.000</p>
+                    <div className='linea-separadora'></div>
+                    <p className='subtitulo-producto'>DESCRIPCION</p>
+                    <p className='descricpion-producto'>Zapatos goticos ficticios de cuero sintetico negro, con hebillas plateadas, punta puntiaguda y tacon grueso. Ideales para un estilo oscuro y distintivo.</p>
+                    <p className='subtitulo-producto'>ELECCION</p>
+                    <p className='seleccion'>color</p>
                     <label className={`seleccion-color ${color === 'blanco' ? 'selected' : ''}`} style={{backgroundColor: 'white'}} onClick={() => handleColor('blanco')} ><span style={{ visibility: 'hidden' }}>....</span></label>
                     <label className={`seleccion-color ${color === 'negro' ? 'selected' : ''}`} style={{backgroundColor: 'black'}} onClick={() => handleColor('negro')}><span style={{ visibility: 'hidden' }}>....</span></label>
-                    <p className='seleccion'>Talle:</p>
+                    <p className='seleccion'>talle</p>
                     <label className={`seleccion-talle ${talle === 35 ? 'selected' : ''}`} onClick={() => handleTalle(35)}>35</label>
                     <label className={`seleccion-talle ${talle === 36 ? 'selected' : ''}`} onClick={() => handleTalle(36)}>36</label>
                     <label className={`seleccion-talle ${talle === 37 ? 'selected' : ''}`} onClick={() => handleTalle(37)}>37</label>

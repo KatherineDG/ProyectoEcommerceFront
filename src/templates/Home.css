@@ -46,9 +46,10 @@
 .btn-ver-productos{
     background-color: white;
     border: 1px solid black;
-    padding: 1em;
+    padding: 0.8em;
     font-family: "Satoshi-Bold";
     font-size: 1.3em;
+    border-radius: 5px;
 }
 
 
