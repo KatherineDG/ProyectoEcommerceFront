@@ -13,6 +13,9 @@
     src: url('/public/fonts/Satoshi-Light.otf');
 }
 
+.body-contact{
+    background-color: white;
+}
 
 .contact{
     display: flex;
@@ -137,6 +140,7 @@
 }
 
 .contenedor-redes-sociales-contact{
+    display: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,12 +151,27 @@
     position: relative;
 }
 
+.red-social-contact a{
+    position: relative;
+    z-index: 2;
+}
+
+.user-red-social-contact-uno{
+    position:absolute;
+    margin: 10px 0 10px 0;
+    z-index: 1;
+    color: black;
+}
+
+
 .icon-red-social-contact{
+    display: relative;
     cursor: pointer;
     width: 50%;
     height: 50%;
     background-color: rgb(255, 255, 255);
     padding: 0 100% 0 0;
+    z-index: -1;
 }
 
 .icon-red-social-contact:hover{
@@ -170,12 +189,6 @@
 }
  
 
-.user-red-social-contact-uno{
-    position:absolute;
-    margin: 10px 0 10px 0;
-    z-index: -1;
-    color: black;
-}
 
 
 
@@ -231,6 +244,7 @@
     }
 
     .redes-sociales-contact{
+        position: relative;
         display: flex;
         flex-direction: column;
         margin: 10% 15% 10% 15%;
@@ -243,18 +257,21 @@
     }
 
     .contenedor-redes-sociales-contact{
+        display: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     .icon-red-social-contact{
+        position: relative;
         width: 50%;
         height: 50%;
         background-color: transparent;
         cursor: pointer;
         animation: none;
         margin: 0 0 0 15%;
+        z-index: 2;
     }
     .icon-red-social-contact:hover{
         animation: none;
@@ -263,7 +280,7 @@
     .user-red-social-contact-uno{
         position: relative;
         cursor: pointer;
-        z-index: 1;
+        z-index: 2;
     }
 }
 
