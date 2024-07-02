@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'ScherazadeNew-Bold';
+    src: url('/public/fonts/ScheherazadeNew-Bold.ttf');
+}
+
+.modal-product-added{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+    font-family: 'ScherazadeNew-Bold';
+}
+
+
+.deco-agregado{
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: white;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px 200px 20px 200px;
+    border: 1px solid #000;
+}
+
+.titulo-producto-agregado{
+    font-size: 1.3em;
+}
+
+.product-added-title{
+    font-size: 1.2em;
+}
+
+.informacion-producto-agregado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+}
+
+.separadores{
+    display: flex;
+    flex-direction: column;
+}
+
+.separador{
+    padding: 1px 100px 0 0;
+    background-color: #000;
+    margin: 5px;
+
+}
+
+.valores-producto-agregado{
+    font-size: 1.2em;
+}
+
+.precio-producto-agregado{
+    font-size: 1.4em;
+}
+
+.btns-agregado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0 0 0;
+}
+
+.button-ver-carrito{
+    background-color: orange;
+    margin: 0 30px 0 0;
+    font-family: 'ScherazadeNew-Bold';
+    font-size: 1.2em;
+    border: none;
+    padding: 0 1em 0 1em;
+    cursor: pointer;
+}
+
+.button-seguir-comprando{
+    background-color: black;
+    color: white;
+    margin: 0 0 0 30px;
+    font-family: 'ScherazadeNew-Bold';
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}

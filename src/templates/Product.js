@@ -2,6 +2,7 @@ import {React, useState} from 'react';
 import './Product.css'
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
+import ModalProductAdded from '../components/modalProductAdded/ModalProductAdded';
 
 
 function Product(){
@@ -9,6 +10,7 @@ function Product(){
     const [cantidad, setCantidad] = useState(1)
     const [talle, setTalle] = useState(null)
     const [color, setColor] = useState('')
+    const [mostrarModalProductoAgregado, setMostrarModalProductoAgregado] = useState(false);
 
     const handleImagenElegida = (imagenElegida) => {
         setImagenElegida(imagenElegida)
@@ -42,6 +44,10 @@ function Product(){
         else {
             setColor(colorSeleccionado)
         }
+    }
+
+    const handleMostrarModalProductoAgregado = () => {
+        setMostrarModalProductoAgregado(!mostrarModalProductoAgregado)
     }
 
     return(
@@ -82,8 +88,9 @@ function Product(){
                         <p>{cantidad}</p>
                         <button onClick={() => handleCantidad('+')}>+</button>
                     </div>
-                    <button className='btn-anadir'>Añadir al carrito</button>
+                    <button className='btn-anadir' onClick={() => handleMostrarModalProductoAgregado()}>Añadir al carrito</button>
                 </div>
+                {mostrarModalProductoAgregado ? <ModalProductAdded/> : null}
             </div>
             <Footer/>
         </div>
