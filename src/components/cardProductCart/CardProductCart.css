@@ -1,0 +1,33 @@
+.card-product-cart{
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.imagen-producto{
+    width: 30%;
+}
+
+.contenedor-info-producto{
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-producto{
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: 0 0 2px 0;
+}
+
+.info-producto{
+    margin: -2px 0 -2px 0;
+}
+
+.precio-producto{
+    margin: 2px 0 0 0;
+    font-weight: bold;
+}
+
+.icon-eliminar{
+    width: 15%;
+    margin: 0 0 0 100%;
+}

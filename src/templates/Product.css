@@ -93,7 +93,7 @@
     font-family: 'Satoshi Medium';
     display: flex;
     flex-direction: row;
-    margin: 10% 0 0 0;
+    margin: 10% 0 10% 0;
 }
 
 .selector-cantidad button{
@@ -118,7 +118,6 @@
     border: none;
     font-size: large;
     font-family: 'Satoshi-Black';
-    margin: 10% 0 0 0;
     padding: 0.3em 1em 0.3em 1em;
     cursor: pointer;
 
@@ -128,4 +127,10 @@
 /* estilo dinamico / sobreescribe */
 .selected {
     border: 3px solid orange; 
+}
+
+.titulo-producto-anadido{
+    font-family: 'Satoshi-Bold';
+    font-size: small;
+    margin: 10% 0 0 0;
 }

@@ -47,7 +47,12 @@ function Product(){
     }
 
     const handleMostrarModalProductoAgregado = () => {
-        setMostrarModalProductoAgregado(!mostrarModalProductoAgregado)
+        if (color !== '' || talle !== null) {
+            setMostrarModalProductoAgregado(!mostrarModalProductoAgregado)
+        }
+        else {
+            alert('Debe seleccionar un color y un talle')
+        }
     }
 
     return(
@@ -88,7 +93,11 @@ function Product(){
                         <p>{cantidad}</p>
                         <button onClick={() => handleCantidad('+')}>+</button>
                     </div>
-                    <button className='btn-anadir' onClick={() => handleMostrarModalProductoAgregado()}>Añadir al carrito</button>
+                    {mostrarModalProductoAgregado ? 
+                        <p className='titulo-producto-anadido'>Producto añadido al carrito</p>
+                    :
+                        null}
+                    <button className='btn-anadir' onClick={() => handleMostrarModalProductoAgregado()} disabled={mostrarModalProductoAgregado} >Añadir al carrito</button>
                 </div>
                 {mostrarModalProductoAgregado ? <ModalProductAdded/> : null}
             </div>

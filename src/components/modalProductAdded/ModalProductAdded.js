@@ -10,11 +10,16 @@ function ModalProductAdded({tituloProducto, color, talle, cantidad, direccion1, 
         navigate('/productos')
     }
 
+    const cerrarModal = () => {
+        const modal = document.querySelector('.modal-product-added')
+        modal.style.display = 'none'
+    }
+
     return (
         <div className='modal-product-added'>
             <div className='deco-agregado'>
             <div className='modal-content'>
-                <img className='icon-check' src='/images/icons/icon-check.png' alt=''></img>
+                <img className='close-modal' src='/images/icons/icon_close.png' alt='close' onClick={cerrarModal}></img>
                 <p className='titulo-producto-agregado'>¡Producto añadido al carrito!</p>
                 <p className='titulo-producto-agregado'>GOTIC</p>
                 <div className='informacion-producto-agregado'>

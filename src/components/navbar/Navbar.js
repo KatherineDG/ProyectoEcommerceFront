@@ -1,7 +1,15 @@
-import React from 'react';
+import { React, useState } from 'react';
 import './Navbar.css';
+import Carrito from '../../templates/Carrito';
 
 function Navbar() {
+
+    const [verCarrito, setVerCarrito] = useState(false)
+
+    const mostrarCarrito = () => {
+        setVerCarrito(!verCarrito)
+    }
+
     return (
         <div className='navbar'>
             <div className='linea-promocion'>
@@ -22,11 +30,14 @@ function Navbar() {
                     <input className='input-busqueda' placeholder='Buscar'></input>
                     <span className='contenedor-lupa-icon'><img className='lupa-icon' src='/images/icons/icon-lupa.png' alt='lupa-icon'></img></span>
                 </div>
-                <div className='carrito'>
-                    <img className='icon-carrito' src='/images/icons/icon-bolso.png' alt='icon-bolso'></img>
+                <div className='contenedor-icon-carrito'>
+                    <img className='icon-carrito' src='/images/icons/icon-bolso.png' alt='icon-bolso' onClick={mostrarCarrito} ></img>
                 </div>
             </div>
-            
+            { verCarrito ?
+                    <Carrito/>
+                :
+                    null }
         </div>
     )
 }

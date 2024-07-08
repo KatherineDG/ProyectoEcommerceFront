@@ -106,3 +106,9 @@
     border: none;
     cursor: pointer;
 }
+
+.close-modal{
+    position: relative;
+    width: 8%;
+    cursor: pointer;
+}

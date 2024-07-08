@@ -1,0 +1,16 @@
+.carrito{
+    position: absolute;
+    background-color: white;
+    right: 0;
+    height: 100%;
+    width: 30%;
+}
+
+.contenedor-titulo-carrito{
+    display: flex;
+}
+
+.icon-close{
+    width: 8%;
+    height: 8%;
+}
