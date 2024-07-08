@@ -8,10 +8,11 @@ function CardProductSquare({
   priceNowProduct,
   inDiscount,
   porcentageDiscount,
+  onClick
 }) {
 
   return (
-    <div>
+    <div onClick={onClick}>
       {inDiscount ? (
         <div>
           <div className="discount-deco-square">{porcentageDiscount}% OFF</div>

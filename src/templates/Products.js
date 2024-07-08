@@ -4,10 +4,17 @@ import CardProductSquare from "../components/cardProductSquare/CardProductSquare
 import Filters from "../components/filters/Filters";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
+import { useNavigate } from 'react-router-dom';
 
 function Products() {
+    const navigate = useNavigate();
     const [isMobile, setIsMobile] =  useState(false);
     const [seeFiltersMobile, setSeeFiltersMobile] = useState(false);
+
+    const irProductoIndividual = (productName) => {
+        navigate(`/producto/${productName}`);
+    }
+
 
     const activarFiltrosMobile = () => {
         if (seeFiltersMobile === true) {
@@ -62,7 +69,7 @@ function Products() {
                 </div>
             }
             <div className="products">
-                <CardProductSquare urlImage={'/images/zapatogoticuno.jpg'} nameProduct={'GOTIC'} priceNowProduct={'$50.000,00'} inDiscount={false}/>
+                <CardProductSquare urlImage={'/images/zapatogoticuno.jpg'} nameProduct={'GOTIC'} priceNowProduct={'$50.000,00'} inDiscount={false} onClick={() => irProductoIndividual('gotic')}/>
                 <CardProductSquare urlImage={'/images/zapatosimplewuno.jpg'} nameProduct={'SIMPLE W'} priceNowProduct={'$40.000,00'} inDiscount={true} priceLastProduct={'$45.000,00'} porcentageDiscount={'11'}/>
                 <CardProductSquare urlImage={'/images/zapatoextrauno.jpg'} nameProduct={'EXTRA'} priceNowProduct={'$50.000,00'} inDiscount={false}/>
             </div>

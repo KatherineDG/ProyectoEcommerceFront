@@ -11,7 +11,7 @@ function Navbar() {
             </div>
             <div className='contenedor-navbar'>
                 <div className='contenedor-logo-marca'>
-                    <img className='logo-marca' src='./images/logo.png' alt='logo' />
+                    <img className='logo-marca' src='/images/logo.png' alt='logo' />
                 </div>
                 <div className='nav-secciones'>
                     <a className='nav-seccion' href='/'>INICIO</a>
@@ -20,10 +20,10 @@ function Navbar() {
                 </div>
                 <div className='busqueda'>
                     <input className='input-busqueda' placeholder='Buscar'></input>
-                    <span className='contenedor-lupa-icon'><img className='lupa-icon' src='./images/icons/icon-lupa.png' alt='lupa-icon'></img></span>
+                    <span className='contenedor-lupa-icon'><img className='lupa-icon' src='/images/icons/icon-lupa.png' alt='lupa-icon'></img></span>
                 </div>
                 <div className='carrito'>
-                    <img className='icon-carrito' src='./images/icons/icon-bolso.png' alt='icon-bolso'></img>
+                    <img className='icon-carrito' src='/images/icons/icon-bolso.png' alt='icon-bolso'></img>
                 </div>
             </div>
             

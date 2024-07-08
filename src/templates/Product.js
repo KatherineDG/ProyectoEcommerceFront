@@ -6,7 +6,7 @@ import ModalProductAdded from '../components/modalProductAdded/ModalProductAdded
 
 
 function Product(){
-    const [imagenElegida, setImagenElegida] = useState('images/zapatogoticuno.jpg')
+    const [imagenElegida, setImagenElegida] = useState('/images/zapatogoticuno.jpg')
     const [cantidad, setCantidad] = useState(1)
     const [talle, setTalle] = useState(null)
     const [color, setColor] = useState('')
@@ -53,7 +53,7 @@ function Product(){
     return(
         <div className='body'>
             <Navbar/>
-            <button className='btn-volver'><img src='./images/icons/icon_flecha_reversa.png' alt='volver'></img></button>
+            <button className='btn-volver'><img src='/images/icons/icon_flecha_reversa.png' alt='volver'></img></button>
             <div className='contenedor-producto'>
                 <div className='galeria-producto'>
                     <div className='imagenes-producto'>
