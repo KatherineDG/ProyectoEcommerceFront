@@ -1,7 +1,7 @@
 .filters-right{
     background-color: rgb(255, 255, 255);
     position: absolute;
-    height: 100vh;
+    height: 90vh;
     width: 15%;
     color: rgb(0, 0, 0);
     overflow-y: auto; /* Hace que el contenido se desplace si es más largo que el contenedor */

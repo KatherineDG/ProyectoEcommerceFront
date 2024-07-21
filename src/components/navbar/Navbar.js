@@ -5,6 +5,7 @@ import Carrito from '../../templates/Carrito';
 function Navbar() {
 
     const [verCarrito, setVerCarrito] = useState(false)
+    const [carritoVacio, setCarritoVacio] = useState(true)
 
     const mostrarCarrito = () => {
         setVerCarrito(!verCarrito)
@@ -32,6 +33,7 @@ function Navbar() {
                 </div>
                 <div className='contenedor-icon-carrito'>
                     <img className='icon-carrito' src='/images/icons/icon-bolso.png' alt='icon-bolso' onClick={mostrarCarrito} ></img>
+                    {carritoVacio ? <div className='notificacion-carrito'></div> : null}
                 </div>
             </div>
             { verCarrito ?

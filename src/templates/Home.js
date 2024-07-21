@@ -36,8 +36,20 @@ function Home() {
     return (
         <div className="body">
             <Navbar />
-            <div className="presentacion"><p>¡Hola! ¡Bienvenido/a a <b>Solsticio</b>!
-                 </p><p>¿Buscas <b>zapatos</b>? ¡Estas en el lugar correcto!</p>
+            <div className="presentacion">                
+                <div className="texto-presentacion">
+                    <p>¡Hola! ¡Bienvenido/a a <b>Solsticio</b>!</p><p>¿Buscas <b>zapatos</b>? ¡Estas en el lugar correcto!</p>
+                 </div>
+                 <div  className="contenedor-bajar">
+                    <img className="bajar" src="/images/icons/icon_down.png" alt="bajar"></img>
+                 </div>
+                 
+                 <div className="contenedor-imagen-presentacion">
+                    <img src="/images/homedeco.jpg" alt="zapatos" className="imagen-presentacion"/>
+                 </div>
+
+
+
             </div>
             <h1 className="titulo">Hecha un vistazo a nuestra variedad de calzados</h1>
             <div>

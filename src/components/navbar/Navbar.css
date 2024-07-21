@@ -1,6 +1,5 @@
 .navbar{
     position: inline-block;
-    margin-bottom: 5%;
 }
 
 .contenedor-navbar{
@@ -39,11 +38,9 @@
 .logo-marca{
     position: absolute;
     background-color: black;
-    width: 100px;
-    object-fit: cover; /* Recorta la imagen para que cubra el contenedor */
-    padding: 0 3% 1% 3.6%;
+    width: 90px;
     border-radius: 20px;
-    margin: 2% 0 0 0;
+    margin: 0.5% 0 0 3%;
 }
 
 .nav-secciones{
@@ -108,4 +105,14 @@
     display: inline-block;
     width: 50px;
     margin: 0 10px 30% 0;
+}
+
+.notificacion-carrito{
+    position: absolute;
+    margin: 25px 0 0 25px ;
+    background-color: rgba(211, 143, 63, 1);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    z-index: 2;
 }

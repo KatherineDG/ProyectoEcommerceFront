@@ -1,6 +1,7 @@
 .card-product-cart{
     display: flex;
     background-color: whitesmoke;
+    margin-top: 5px;
 }
 
 .imagen-producto{
@@ -15,19 +16,19 @@
 .nombre-producto{
     font-size: 1.5em;
     font-weight: bolder;
-    margin: 0 0 2px 0;
+    margin: 0 0 5px 0;
 }
 
 .info-producto{
-    margin: -2px 0 -2px 0;
+    margin: 2px 0 2px 0;
 }
 
 .precio-producto{
-    margin: 2px 0 0 0;
+    margin: 10px 0 0 0;
     font-weight: bold;
 }
 
 .icon-eliminar{
     width: 15%;
-    margin: 0 0 0 100%;
+    margin: 5px 0 0 100%;
 }
